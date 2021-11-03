@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.9433962, g: 0.6630473, b: 0.74337506, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.463966
+  orthographic size: 14.631981
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.62, y: -3.09, z: -10}
+  m_LocalPosition: {x: -1.41, y: -9.39, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -235,13 +235,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734d6612a1f0c2f4ca2c834edac045f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outsideCorner: {fileID: 4913259689420161863, guid: d6422d365de0ebd40ab3461174ac70fd, type: 3}
-  outsideWall: {fileID: 6203886675614308205, guid: 15fd9deebd6b0da42a62bec1f1c65819, type: 3}
-  insideCorner: {fileID: 4879213682610111837, guid: bd4c2f4fffd3eaa46b23f1ac4502d85f, type: 3}
-  insideWall: {fileID: 6831575278947894976, guid: 492a321721db2e747b90b2897c4ede68, type: 3}
+  outsideCorner: {fileID: 5225213655945529610, guid: 3f0a67ef4733bb441a4c3b6a72cdf387, type: 3}
+  outsideWall: {fileID: 2629580290862483331, guid: e4d4ed9c95cf516478fa1c93b8ace58a, type: 3}
+  insideCorner: {fileID: 8860573233662538527, guid: d2d4f8721a44ac0458d2bac6074d078b, type: 3}
+  insideWall: {fileID: 3329036983092137357, guid: a216c0653c16b19459f57e22893dcca6, type: 3}
   standardPellet: {fileID: 2911304063369780114, guid: 87da887ff6f5b7f47b08a1a52d595f7d, type: 3}
   powerPellet: {fileID: 8620325022218851193, guid: 2a4c8c391297036408f215f7507d483b, type: 3}
-  tJunction: {fileID: 4475717027920244673, guid: e16edebf69441d347874be2547ca1c95, type: 3}
+  tJunction: {fileID: 7178701347258853881, guid: a5bc33f3046827549b359678029be510, type: 3}
   cherry: {fileID: 2524927121341205302, guid: b96379cca033631498ef6c50cd72002e, type: 3}
   pacman: {fileID: 3353034592158417927, guid: 6972012ca4b324947bfc31054bc5546d, type: 3}
 --- !u!4 &1472980516

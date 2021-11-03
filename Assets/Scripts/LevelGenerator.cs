@@ -55,15 +55,15 @@ public class LevelGenerator : MonoBehaviour
           {1,0,1,0,0,1,0,1,0,0,0,1,0,1},
           {1,0,1,0,0,2,0,1,0,0,0,2,0,1},
           {1,0,0,0,0,0,0,0,0,0,0,0,0,1},
-          {1,0,0,0,0,3,2,0,3,0,0,1,1,1},
-          {1,0,1,0,0,2,0,1,0,0,1,1,1,3},
-          {1,0,0,0,0,0,0,1,0,0,0,0,0,0},
-          {1,0,0,0,0,3,0,1,1,0,0,3,0,0},
-          {0,0,0,0,0,1,0,1,1,0,1,2,0,1},
-          {0,0,0,0,0,1,0,1,1,0,1,0,0,0},
-          {1,0,0,0,0,1,0,1,1,0,1,1,1,0},
-          {2,0,0,0,0,2,0,1,2,0,1,0,0,0},
-          {0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+          {1,0,0,0,0,3,2,0,3,0,0,0,0,0},
+          {1,0,1,0,0,2,0,1,1,0,1,0,0,3},
+          {1,0,0,0,0,0,0,1,1,0,0,0,0,1},
+          {1,0,0,0,0,3,0,1,1,0,0,3,1,1},
+          {0,0,0,0,0,1,0,1,1,0,0,2,1,1},
+          {0,0,0,0,0,1,0,1,1,0,2,0,0,0},
+          {0,0,0,0,0,1,0,1,1,0,0,0,0,0},
+          {0,0,0,0,0,2,0,1,2,0,3,0,0,0},
+          {0,0,0,0,0,0,0,0,0,0,3,0,0,0},
           };
 
 
@@ -150,16 +150,16 @@ public class LevelGenerator : MonoBehaviour
                     float posX = (column + startColumn) * tile * yquad;
                     float posY = (row + startRow) * -tile * xquad;
                     tJunctionobj = Instantiate<GameObject>(tJunction, new Vector2(posX, posY), Quaternion.identity);
-                    RotateObject(tJunction, row, column, quadrant, RotationMap);
+                    RotateObject(tJunctionobj, row, column, quadrant, RotationMap);
                 }
-                if (levelMap[row, column].Equals(8))
+                /*if (levelMap[row, column].Equals(8))
                 {
                     GameObject cherryobj;
                     float posX = (column + startColumn) * tile * yquad;
                     float posY = (row + startRow) * -tile * xquad;
                     cherryobj = Instantiate<GameObject>(cherry, new Vector2(posX, posY), Quaternion.identity);
                     cherryobj.transform.position = new Vector3(posX, posY, 10f);
-                }
+                }*/
             }
         }
         float GridHeight = levelMap.GetLength(0) * tile;
@@ -171,19 +171,15 @@ public class LevelGenerator : MonoBehaviour
     {
         if (quadrant.Equals(0))
         {
-            if (mapAdjustment[row, column].Equals(0))
-            {
-
-            }
-            else if (mapAdjustment[row, column].Equals(1))
+            if (mapAdjustment[row, column].Equals(1))
             {
                 obj.transform.Rotate(0f, 0f, 90f);
             }
-            else if (mapAdjustment[row, column].Equals(2))
+            if (mapAdjustment[row, column].Equals(2))
             {
                 obj.transform.Rotate(0f, 0f, 180f);
             }
-            else if (mapAdjustment[row, column].Equals(3))
+            if (mapAdjustment[row, column].Equals(3))
             {
                 obj.transform.Rotate(0f, 0f, 270f);
             }
