@@ -24,9 +24,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField]
     private GameObject tJunction;
     [SerializeField]
-    private GameObject cherry;
-    [SerializeField]
-    private GameObject pacman;
+
 
     public static int[,] levelMap =
       {
@@ -70,7 +68,6 @@ public class LevelGenerator : MonoBehaviour
 
       void Start()
       {
-          SpriteInstantiate();
           GenerateLevel(levelMap, -15f, -5f, 1, 1, 0);
           GenerateLevel(levelMap, -15f, -24f, -1, 1, 1);
           GenerateLevel(levelMap, -12f, -5f, 1, -1, 2);
@@ -78,11 +75,6 @@ public class LevelGenerator : MonoBehaviour
       }
 
 
-    private void SpriteInstantiate()
-    {
-
-        pacman.transform.position = new Vector3(0, 0, 0);
-    }
     private void GenerateLevel(int[,] map, float startColumn, float startRow, int xquad, int yquad, int quadrant)
     {
         for (int row = 0; row < map.GetLength(0); row++)
