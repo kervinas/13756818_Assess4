@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PacStudentMovement1 : MonoBehaviour
 {
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rigidb2D;
     private float horizontalSpeed = 2.0f;
     private float verticalSpeed = 2.0f;
 
@@ -17,7 +17,7 @@ public class PacStudentMovement1 : MonoBehaviour
 
     void Start()
     {
-      rigidbody2D = GetComponent<Rigidbody2D>();
+      rigidb2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -49,19 +49,19 @@ public class PacStudentMovement1 : MonoBehaviour
     {
         if(pressKey == RIGHT)
         {
-          rigidbody2D.velocity = new Vector2 (horizontalSpeed, 0);
+          GetComponent<Rigidbody2D>().velocity = new Vector2 (horizontalSpeed, 0);
         }
         if(pressKey == LEFT)
         {
-          rigidbody2D.velocity = new Vector2 (-horizontalSpeed, 0);
+          GetComponent<Rigidbody2D>().velocity = new Vector2 (-horizontalSpeed, 0);
         }
         if(pressKey == UP)
         {
-          rigidbody2D.velocity = new Vector2 (0, verticalSpeed);
+          GetComponent<Rigidbody2D>().velocity = new Vector2 (0, verticalSpeed);
         }
         if(pressKey == DOWN)
         {
-          rigidbody2D.velocity = new Vector2 (0, -verticalSpeed);
+          GetComponent<Rigidbody2D>().velocity = new Vector2 (0, -verticalSpeed);
         }
     }
 }
