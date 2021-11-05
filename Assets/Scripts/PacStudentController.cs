@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PacStudentMovement1 : MonoBehaviour
+public class PacStudentController : MonoBehaviour
 {
     Rigidbody2D rigidb2D;
     private float horizontalSpeed = 2.0f;
